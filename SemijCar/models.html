@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SemijCar - Modeller</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+  
+  <header>
+    <nav>
+      <a href="index.html" class="logo">SemijCar</a>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="models.html">Modeller</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+        <li><a href="services.html">Servis</a></li>
+        <li><a href="testdrive.html">Test Sürüşü</a></li>
+        <li><a href="about.html">Hakkımızda</a></li>
+        <li><a href="video.html">Servis Çalışanı</a></li>
+        <li><button id="themeToggle" class="theme-btn" aria-label="toggle theme">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="models">
+    <h1>Modellerimiz</h1>
+    <!-- filtre -->
+    <div class="filters">
+      <label>Filtre: </label>
+      <select id="modelFilter">
+        <option value="all">Hepsi</option>
+        <option value="benzinli">Benzinli</option>
+        <option value="dizel">Dizel</option>
+        <option value="elektrikli">Elektrikli</option>
+        <option value="hibrit">Hibrit</option>
+      </select>
+
+      <button id="compareBtn" class="btn small">Seçili İki Aracı Karşılaştır</button>
+    </div>
+
+    <!-- modeller grid -->
+    <div class="grid" id="modelsGrid">
+      <!-- JS ile eklenecek araç kartları -->
+    </div>
+
+    <!-- karşılaştırma alanı -->
+    <div id="compareArea" class="compare-area" hidden>
+      <h3>Karşılaştırma</h3>
+      <div class="compare-cards" id="compareCards"></div>
+      <button id="closeCompare" class="btn">Kapat</button>
+    </div>
+  </main><br>
+
+<table class="specs">
+  <tr><th>Model</th><th>Motor</th><th>Beygir</th><th>Fiyat</th></tr>
+  <tr><td>Model Semij Mercedes Benz</td><td>Hibrit</td><td>671 HP</td><td>8.500.000 ₺</td></tr>
+  <tr><td>Model Semij Audi A8</td><td>3.0L V6 Benzinli</td><td>340 HP</td><td>4,100,000 ₺</td></tr>
+  <tr><td>Model Semij BMW M4</td><td>Benzin</td><td>500 HP</td><td>3.500.000 ₺</td></tr>
+  <tr><td>Model Semih CyberTruck</td><td>Elektrikli</td><td>400 HP</td><td>2.000.000 ₺</td></tr>
+</table><br>
+<div class="model-container"></div>
+    <div class="model-card">
+      <img src="img/gallery1.jpg" alt="Model 1">
+      <h2>Model Semij Mercedes Benz</h2>
+      <p>Fonksiyonellik ve Çeşitlilik.</p>
+    </div>
+    </div>
+
+    <div class="model-card">
+      <img src="img/gallery2.jpg" alt="Model 2">
+      <h2>Model Semij Audi A8</h2>
+      <p>Lüks ve Konfor.</p>
+    </div>
+    
+    
+    <div class="model-card">
+      <img src="img/car2.jpg" alt="Model 3">
+      <h2>Model Semij BMW M4</h2>
+      <p>Güçlü motor, üstün tasarım.</p>
+    </div>
+
+    
+    <div class="model-card">
+      <img src="img/car1.jpg" alt="Model 4">
+      <h2>Model Semij CyberTruck</h2>
+      <p>Tasarım ve Dayanıklılık.</p>
+    </div>
+  
+  </section>
+
+  <footer><!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="social">
+        <a href="https://www.facebook.com/friends/suggestions/?profile_id=100044876927954&locale=tr_TR" aria-label="facebook"><img src="img/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/semihbjk28/" aria-label="instagram"><img src="img/instagram.png" alt=""></a>
+        <a href="https://x.com/KoksaldSem20820/with_replies" aria-label="twitter"><img src="img/twitter.png" alt=""></a>
+        <p>© 2017 SemijCar. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
